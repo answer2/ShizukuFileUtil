@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion "33.0.0"
+
+    defaultConfig {
+        applicationId "dev.answer.readdata"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    
+    implementation "dev.rikka.shizuku:api:13.1.5"
+    // Add this line if you want to support Shizuku
+    implementation "dev.rikka.shizuku:provider:13.1.5"
+    
+    
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+}
