@@ -24,10 +24,7 @@ public class MainActivity extends Activity {
     public void load(View v) {
         if (Exec.checkPermission(10086)) {
             List list = ShizukuFileUtil.list("/sdcard/Android/data/");
-                text.setText(list.size()+"");
-                
-                ShizukuFileUtil.copy("/sdcard/Download/天后资源", "/sdcard/Android/data/com.tencent.mobileqq/");
-          
+            text.setText(list.size()+"");
         } else {
             Log.d("logg", "errro");
         }
