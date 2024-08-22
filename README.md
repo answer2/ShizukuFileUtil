@@ -1,5 +1,6 @@
 
-# ShizukuFileUtil [中文版本](README_CN.md)
+# ShizukuFileUtil 
+[中文版本](README_CN.md)
 
 ## Overview
 **ShizukuFileUtil** is a utility class that provides file I/O control through various methods using Shizuku, a service that allows regular apps to use system APIs with ADB/root privileges. The class contains several static methods for file operations such as listing, reading, moving, removing, and copying files.
