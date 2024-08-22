@@ -1,5 +1,6 @@
 
-# ShizukuFileUtil [English Version](README.md)
+# ShizukuFileUtil 
+[English Version](README.md)
 
 `ShizukuFileUtil` 是一个用于文件 I/O 控制的工具类。它依赖 `ShizukuExec` 来执行与文件操作相关的 Shell 命令，提供了一些常见的文件操作方法，如列出目录、读取文件内容、移动文件、删除文件等。
 
