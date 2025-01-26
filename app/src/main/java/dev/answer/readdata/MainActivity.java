@@ -23,10 +23,11 @@ public class MainActivity extends Activity {
 
     public void load(View v) {
         if (Exec.checkPermission(10086)) {
-            List list = ShizukuFileUtil.list("/sdcard/Android/data/");
-            text.setText(list.size()+"");
+            // For Test
+            ShizukuFileUtil.write("/sdcard/Android/data/test.txt", "just for test");
+            text.setText( ShizukuFileUtil.exist("/sdcard/Android/data/com.mojang.minecraftpe/")+"   " +ShizukuFileUtil.read("/sdcard/Android/data/test.txt"));
         } else {
-            Log.d("logg", "errro");
+            Log.d("logg", "errro: run shizuku fail!!!!");
         }
     }
 
