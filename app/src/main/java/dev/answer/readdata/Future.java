@@ -8,11 +8,16 @@ public class Future<T> {
 
     private T value;
 
-    public void complete(T value) {
+    public Future<T> complete(T value) {
         this.value = value;
+        return this;
     }
 
     public T get() {
         return value;
+    }
+
+    public static <V> Future<V> generate(V value){
+        return new Future<V>().complete(value);
     }
 }
